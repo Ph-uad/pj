@@ -1,0 +1,88 @@
+.header {
+    background: url(../images/hero-large.jpg) center center/cover no-repeat;
+    color: #fff;
+
+    &-container {
+        height: 100vh;
+    }
+    &-subtext{
+        font-size: 2rem;
+    }
+}
+
+.mission{
+    &-text{
+        flex: 0 1 60%;
+    }
+
+    &-gallery{
+        flex: 0 1 30%;
+    }
+
+    &-image{
+        width: 100%;
+    }
+}
+
+.team{
+
+    &-profile{
+        border-radius: 5px;
+        padding: 4rem 1rem;
+    }
+
+    &-gallery{
+         clip-path: circle(40% at 50%);
+        overflow: hidden;
+        width: 80%;
+        margin: 0 auto;
+
+        &__img{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+
+
+.video{
+    width: 70%;
+    margin: 0 auto;
+    padding: 4rem 0;
+    color: #fff;
+
+    &-source{
+        width: 40rem;
+        aspect-ratio: 3/2;
+        object-fit: cover;
+    }
+
+    &-label{
+        width: 100%;
+        aspect-ratio: 4/1;
+        background-color: #FFf;
+       & > span{
+           margin-right: auto;
+       }
+    }
+}
+
+
+.footer{
+    background-color: #011017;
+    font-size: 2rem;
+
+
+    &-flex{
+        justify-content: start;
+    }
+    
+    &-note{
+        width: 80%;
+        margin: 10rem auto 0 auto;
+        padding: 2rem;
+        color: #fff;
+        border-top: 1px solid #fff;
+    }
+}

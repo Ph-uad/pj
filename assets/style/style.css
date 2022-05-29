@@ -1,0 +1,230 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-family: "Work Sans", sans-serif;
+  line-height: 1.7;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  -ms-scroll-snap-type: mandatory;
+      scroll-snap-type: mandatory;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section {
+  width: 70%;
+  margin: 5% auto;
+  padding: 5rem;
+}
+
+.card {
+  position: relative;
+  height: 55rem;
+  width: 40rem;
+}
+.card-front, .card-back {
+  position: absolute;
+  height: 57rem;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  perspective: 200px;
+  transition: all 1s ease-in-out;
+}
+.card-front {
+  text-align: center;
+  transform: rotateY(0);
+  background-color: #e4e4e4;
+}
+.card-back {
+  left: 2%;
+  cursor: default;
+  transform: rotateY(-180deg);
+  background-color: #e4e4e4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card:hover > .card-front {
+  transform: rotateY(180deg);
+}
+.card:hover > .card-back {
+  transform: rotateY(20deg);
+}
+
+.header {
+  background: url(../images/hero-large.jpg) center center/cover no-repeat;
+  color: #fff;
+}
+.header-container {
+  height: 100vh;
+}
+.header-subtext {
+  font-size: 2rem;
+}
+
+.mission-text {
+  flex: 0 1 60%;
+}
+.mission-gallery {
+  flex: 0 1 30%;
+}
+.mission-image {
+  width: 100%;
+}
+
+.team-profile {
+  border-radius: 5px;
+  padding: 4rem 1rem;
+}
+.team-gallery {
+  -webkit-clip-path: circle(40% at 50%);
+          clip-path: circle(40% at 50%);
+  overflow: hidden;
+  width: 80%;
+  margin: 0 auto;
+}
+.team-gallery__img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.video {
+  width: 70%;
+  margin: 0 auto;
+  padding: 4rem 0;
+  color: #fff;
+}
+.video-source {
+  width: 40rem;
+  aspect-ratio: 3/2;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.video-label {
+  width: 100%;
+  aspect-ratio: 4/1;
+  background-color: #FFf;
+}
+.video-label > span {
+  margin-right: auto;
+}
+
+.footer {
+  background-color: #011017;
+  font-size: 2rem;
+}
+.footer-flex {
+  justify-content: start;
+}
+.footer-note {
+  width: 80%;
+  margin: 10rem auto 0 auto;
+  padding: 2rem;
+  color: #fff;
+  border-top: 1px solid #fff;
+}
+
+.heading-jumbo {
+  font-size: 6.4rem;
+}
+.heading-primary {
+  font-size: 3rem;
+}
+.heading-primary__light {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.heading-section {
+  font-size: 2.6rem;
+  color: #262626;
+}
+.heading-section__light {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.paragraph {
+  font-size: 2rem;
+  font-weight: 200;
+}
+.paragraph-small {
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+
+.list-item {
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+}
+
+.text-white {
+  color: #b3b8cb;
+}
+
+.icon-white {
+  fill: #b3b8cb;
+}
+
+.link {
+  color: currentColor;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.button {
+  padding: 1.5rem 1.7rem;
+  border: transparent;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  border-radius: 5px;
+  transition: all 0.6s ease-in-out;
+}
+.button:hover {
+  background: #000;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.list {
+  margin: 1rem 0;
+}
+.list-item {
+  list-style: none;
+}/*# sourceMappingURL=style.css.map */

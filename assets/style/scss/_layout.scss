@@ -1,0 +1,59 @@
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.section {
+    width: 70%;
+    margin: 5% auto;
+    padding: 5rem;
+}
+
+.card {
+    position: relative;
+    height: 55rem;
+    width: 40rem;
+
+    &-front,&-back{
+        position: absolute;
+        height: 57rem;
+        width: 100%;
+        backface-visibility: hidden;
+        perspective: 200px;
+        transition: all 1s ease-in-out;
+
+    }
+
+    &-front {
+        text-align: center;
+        transform: rotateY(0);
+        background-color:#e4e4e4;
+    }
+
+    &-back{
+        left: 2%;
+        cursor:default;
+        transform: rotateY(-180deg);
+        background-color:#e4e4e4;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &:hover > &-front{
+        transform: rotateY(180deg);
+    }
+
+    &:hover > &-back{
+        transform: rotateY(20deg);
+    }
+}
+
