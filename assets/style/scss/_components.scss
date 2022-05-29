@@ -9,6 +9,7 @@
         font-size: 2rem;
         @media (max-width: 60rem) {
             &{
+                font-size: 1.8rem;
                 text-align: center;
             }
         }
@@ -57,10 +58,18 @@
     padding: 4rem 0;
     color: #fff;
 
+
     &-source{
         width: 40rem;
         aspect-ratio: 3/2;
         object-fit: cover;
+
+
+    @media (max-width: 60rem) {
+        &{
+            width: 30rem;
+        }
+    }
     }
 
     &-label{

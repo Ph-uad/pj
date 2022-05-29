@@ -11,6 +11,13 @@
 
     transition: all .6s ease-in-out;
 
+    @media (max-width: 60rem) {
+        &{
+            font-size: 1.8rem;
+            
+        }
+    }
+
     &:hover{
         background: #000;
         color: #fff;
