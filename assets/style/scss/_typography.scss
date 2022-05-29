@@ -4,6 +4,12 @@
 .heading {
     &-jumbo {
         font-size: 6.4rem;
+
+        @media (max-width: 60rem) {
+            &{
+                font-size: 4rem;
+            }
+        }
     }
 
     &-primary {
@@ -18,10 +24,19 @@
         font-size: 2.6rem;
         color: #262626;
 
+
+        @media (max-width: 60rem) {
+            &{
+                font-size: 2.4rem;
+            }
+        }
+
         &__light{
             font-size: 2rem;
             font-weight: 500;
+
         }
+
     }
 }
 

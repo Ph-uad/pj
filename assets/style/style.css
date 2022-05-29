@@ -22,6 +22,11 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 60em) {
+  .flex {
+    flex-direction: column;
+  }
+}
 .flex-column {
   display: flex;
   flex-direction: column;
@@ -34,11 +39,22 @@ body {
   margin: 5% auto;
   padding: 5rem;
 }
+@media (max-width: 60rem) {
+  .section {
+    width: 90%;
+    padding: 1rem;
+  }
+}
 
 .card {
   position: relative;
   height: 55rem;
   width: 40rem;
+}
+@media (max-width: 60em) {
+  .card {
+    margin-bottom: 3rem;
+  }
 }
 .card-front, .card-back {
   position: absolute;
@@ -79,6 +95,11 @@ body {
 }
 .header-subtext {
   font-size: 2rem;
+}
+@media (max-width: 60rem) {
+  .header-subtext {
+    text-align: center;
+  }
 }
 
 .mission-text {
@@ -147,6 +168,11 @@ body {
 .heading-jumbo {
   font-size: 6.4rem;
 }
+@media (max-width: 60rem) {
+  .heading-jumbo {
+    font-size: 4rem;
+  }
+}
 .heading-primary {
   font-size: 3rem;
 }
@@ -157,6 +183,11 @@ body {
 .heading-section {
   font-size: 2.6rem;
   color: #262626;
+}
+@media (max-width: 60rem) {
+  .heading-section {
+    font-size: 2.4rem;
+  }
 }
 .heading-section__light {
   font-size: 2rem;
