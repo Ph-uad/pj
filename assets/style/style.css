@@ -10,6 +10,41 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
+@media (max-width: 77.75em) {
+  html {
+    font-size: 56.5%;
+  }
+}
+@media (max-width: 59em) {
+  html {
+    font-size: 61%;
+  }
+}
+@media (max-width: 58em) {
+  html {
+    font-size: 59.5%;
+  }
+}
+@media (max-width: 56.25em) {
+  html {
+    font-size: 56%;
+  }
+}
+@media (max-width: 31.25em) {
+  html {
+    font-size: 50.75%;
+  }
+}
+@media (max-width: 25em) {
+  html {
+    font-size: 48%;
+  }
+}
+@media (max-width: 23.44em) {
+  html {
+    font-size: 40%;
+  }
+}
 
 body {
   -ms-scroll-snap-type: mandatory;
@@ -17,9 +52,14 @@ body {
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 0.5px;
+}
+
 .flex {
   display: flex;
   justify-content: space-between;
+  gap: auto;
   align-items: center;
 }
 @media (max-width: 60em) {
@@ -53,8 +93,6 @@ body {
 }
 @media (max-width: 60em) {
   .card {
-    width: 30rem;
-    height: 60rem;
     margin-bottom: 3rem;
   }
 }
@@ -70,35 +108,40 @@ body {
 .card-front {
   text-align: center;
   transform: rotateY(0);
-  background-color: #e4e4e4;
+  background-color: #fff;
 }
 .card-back {
   left: 2%;
   cursor: default;
   transform: rotateY(-180deg);
-  background-color: #e4e4e4;
+  background-color: #f6f6f6;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: scroll;
 }
 @media (max-width: 60em) {
   .card-back {
     left: 0%;
   }
 }
-.card:hover > .card-front {
+
+.flip > .card-front {
   transform: rotateY(180deg);
 }
-.card:hover > .card-back {
+
+.flip > .card-back {
   transform: rotateY(0deg);
 }
 
 .header {
   background: url(../images/hero-large.jpg) center center/cover no-repeat;
-  color: #fff;
+  height: 100vh;
 }
 .header-container {
-  height: 100vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .header-subtext {
   font-size: 2rem;
@@ -177,6 +220,11 @@ body {
   color: #fff;
   border-top: 1px solid #fff;
 }
+@media (max-width: 60rem) {
+  .footer-note {
+    width: 100%;
+  }
+}
 
 .heading-jumbo {
   font-size: 6.4rem;
@@ -217,14 +265,13 @@ body {
   }
 }
 .paragraph-small {
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   font-weight: 300;
 }
 
 .list-item {
   font-size: 1.6rem;
   font-weight: 500;
-  text-align: center;
 }
 
 .center {
@@ -232,7 +279,7 @@ body {
 }
 
 .text-white {
-  color: #b3b8cb;
+  color: #FDFDFF;
 }
 
 .icon-white {
@@ -242,6 +289,7 @@ body {
 .link {
   color: #262626;
   color: currentColor;
+  text-decoration: none;
 }
 
 .mb-2 {
@@ -281,5 +329,6 @@ body {
   margin: 1rem 0;
 }
 .list-item {
-  list-style: none;
+  font-size: 1.4rem;
+  margin-left: 1rem;
 }/*# sourceMappingURL=style.css.map */

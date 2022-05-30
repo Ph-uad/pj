@@ -1,6 +1,7 @@
 .flex {
     display: flex;
     justify-content: space-between;
+    gap: auto;
     align-items: center;
 
     @media (max-width:60em) {
@@ -33,12 +34,9 @@
     height: 55rem;
     width: 40rem;
 
-
-
     @media (max-width:60em) {
         &{
-            width: 30rem;
-            height: 60rem;
+    
             margin-bottom: 3rem;
         }
     }
@@ -50,23 +48,23 @@
         backface-visibility: hidden;
         perspective: 200px;
         transition: all 1s ease-in-out;
-
     }
 
     &-front {
         text-align: center;
         transform: rotateY(0);
-        background-color:#e4e4e4;
+        background-color:#fff;
     }
 
     &-back{
         left: 2%;
         cursor:default;
         transform: rotateY(-180deg);
-        background-color:#e4e4e4;
+        background-color:#f6f6f6;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        overflow: scroll;
 
         @media (max-width:60em) {
             &{
@@ -74,13 +72,12 @@
             }
         }
     }
+}
 
-    &:hover > &-front{
-        transform: rotateY(180deg);
-    }
-
-    &:hover > &-back{
-        transform: rotateY(0deg);
-    }
+.flip > .card-front{
+    transform: rotateY(180deg);
+}
+.flip > .card-back{
+    transform: rotateY(0deg);
 }
 
