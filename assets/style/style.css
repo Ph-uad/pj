@@ -262,6 +262,7 @@ body {
 @media (max-width: 60rem) {
   .paragraph {
     font-size: 1.8rem;
+    font-weight: 400;
   }
 }
 .paragraph-small {
