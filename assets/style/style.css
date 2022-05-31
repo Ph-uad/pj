@@ -332,4 +332,9 @@ body {
 .list-item {
   font-size: 1.4rem;
   margin-left: 1rem;
+}
+
+.fixed {
+  margin-top: 5%;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
