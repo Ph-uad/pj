@@ -1,24 +1,16 @@
 .header {
     height: fit-content;
+    background: linear-gradient(60deg, #1d1d1d 0%, #0a056c 100%);
+    color:white;
 
-    &-container {
-        width: 80vw;
-        padding-top: 30%;
-    }
+    .inner-header {height:60vh; }
+    &-container { text-align:center;}
 }
 
 .mission {
-    &-text {
-        flex: 0 1 60%;
-    }
-
-    &-gallery {
-        flex: 0 1 30%;
-    }
-
-    &-image {
-        width: 100%;
-    }
+    &-text { flex: 0 1 60%;}
+    &-gallery {flex: 0 1 30%;}
+    &-image { width: 100%;}
 }
 
 
