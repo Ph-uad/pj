@@ -1,50 +1,40 @@
 .header {
-    background: url(../images/hero-large.jpg) center center/cover no-repeat;
+    height: fit-content;
 
     &-container {
-        height: fit-content;
         width: 80vw;
-    }
-
-    &-subtext{
-        font-size: 2rem;
-        @media (max-width: 60rem) {
-            &{
-                font-size: 1.8rem;
-                text-align: center;
-            }
-        }
+        padding-top: 30%;
     }
 }
 
-.mission{
-    &-text{
+.mission {
+    &-text {
         flex: 0 1 60%;
     }
 
-    &-gallery{
+    &-gallery {
         flex: 0 1 30%;
     }
 
-    &-image{
+    &-image {
         width: 100%;
     }
 }
 
-.team{
 
-    &-profile{
+.team {
+    &-profile {
         border-radius: 5px;
         padding: 4rem 1rem;
     }
 
-    &-gallery{
-         clip-path: circle(40% at 50%);
+    &-gallery {
+        clip-path: circle(40% at 50%);
         overflow: hidden;
         width: 80%;
         margin: 0 auto;
 
-        &__img{
+        &__img {
             width: 100%;
             object-fit: cover;
         }
@@ -53,63 +43,64 @@
 
 
 
-.video{
+.video {
     width: 70%;
     margin: 0 auto;
     padding: 4rem 0;
 
 
-    &-source{
+    &-source {
         width: 40rem;
         aspect-ratio: 3/2;
         object-fit: cover;
 
 
-    @media (max-width: 60rem) {
-        &{
-            width: 30rem;
+        @media (max-width: 60rem) {
+            & {
+                width: 30rem;
+            }
         }
     }
-    }
 
-    &-label{
+    &-label {
         width: 100%;
         aspect-ratio: 4/1;
         background-color: #FFf;
-       & > span{
-           margin-right: auto;
-       }
+
+        &>span {
+            margin-right: auto;
+        }
     }
 }
 
 
-.footer{
+.footer {
     font-size: 2rem;
 
-    &-container{
+    &-container {
         background-color: #e7e7f0;
         border-radius: 5rem 5rem 0 0;
     }
 
 
-    &-flex{
-             flex-direction: row;
+    &-flex {
+        flex-direction: row;
     }
-    
-    &-note{
+
+    &-note {
         width: 100%;
         margin: 10rem auto 0 auto;
         padding: 2rem;
         border-top: 1px solid #1d1d1d;
 
         @media (max-width: 60rem) {
-            &{
+            & {
                 width: 100%;
             }
         }
     }
 
-    &-link{
+    &-link {
         color: currentColor;
         margin-left: .5rem;
     }
