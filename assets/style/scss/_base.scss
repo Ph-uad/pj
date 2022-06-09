@@ -54,11 +54,11 @@ html{
 }
 
 body{
-    scroll-snap-type: mandatory;
+    scroll-snap-type:y mandatory;
     box-sizing: border-box;
 
 }
 
 ::-webkit-scrollbar {
-  width: .5px;
+  width: 0;
 }

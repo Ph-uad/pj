@@ -24,13 +24,34 @@
 </head>
 
 <body>
-    <header class="flex-column header">
-        <div class="flex-column header-container text-white">
-            <h1 class="heading-jumbo">Adebouge Holdings</h1>
-            <p class="header-subtext mb-2">connecting underserved market with global opportunities.</p>
-            <a href="#about" class="link"><button class="button"> Learn More</button></a>
+    <div class="header">
+        <!--Content before waves-->
+        <div class="inner-header flex-column">
+            <div class=" header-container text-white">
+                <h1 class="heading-jumbo">Adebouge Holdings</h1>
+                <p class="header-subtext mb-2">connecting underserved market with global opportunities.</p>
+                <a href="#about" class="link"><button class="button"> Learn More</button></a>
+            </div>
         </div>
-    </header>
+
+        <!--Waves Container-->
+        <div>
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave"
+                        d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                </g>
+            </svg>
+        </div>
+        <!--Waves end-->
+    </div>
 
 
     <div class="fluid-container">
@@ -111,15 +132,24 @@
                             <p class="paragraph">The University Chicago Booth School of
                                 Business (MBA)
                             </p>
-                            <div class="fixed">
-                                <svg class="icon">
-                                    <use href="./assets/images/sprite.svg#icon-forward"></use>
-                                </svg>
+                            <div class="center">
+                                <a class="link"
+                                    href="https://www.linkedin.com/in/adebayo-adebogun-pmp?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAhrmD4By6dXII6HnwPzEhNhvRYvr7kJBIY&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BgFG0nUwzSY%2BuHsxHgm4Dyw%3D%3D">
+                                    <svg class="icon">
+                                        <use href="./assets/images/sprite.svg#icon-linkedin-with-circle"></use>
+                                    </svg>
+                                </a>
+                                <a class="link" href="https://twitter.com/BayoAdebogun?s=20&t=2ZgMP6PxKZAq-VWAft3yMQ">
+                                    <svg class="icon">
+                                        <use href="./assets/images/sprite.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>
                             </div>
+
                         </div>
 
-                        <div class="team-profile card-back">
-                            <p class="paragraph-small mb-2">
+                        <!-- <div class="team-profile card-back">
+                            <!-- <p class="paragraph-small mb-2">
                                 Adebayo (Bayo) Adebogun is a tech business executive and social entrepreneur. His
                                 background
                                 includes working on climate change initiatives and portfolio management of cloud
@@ -136,15 +166,15 @@
                                 Makoko, Lagos Nigeria. He is affiliated with notable impact investment organizations in
                                 the
                                 world to solution this shared goal.
-                            </p>
+                            </p> -->
 
-                            <ul class="list">
+                        <!-- <ul class="list">
                                 <li class="list-item">University of Chicago Booth School of Business MBA. </li>
                                 <li class="list-item">Harvard Business School online. </li>
                                 <li class="list-item">University of Kansas. </li>
                                 <li class="list-item">Ogun State University, Nigeria (OOU). </li>
                                 <li class="list-item">Professional Certification - PMP </li>
-                            </ul>
+                            </ul> 
 
                             <div class="center">
                                 <a class="link"
@@ -165,7 +195,12 @@
                                     <use href="./assets/images/sprite.svg#icon-reply"></use>
                                 </svg>
                             </div>
-                        </div>
+                                   <div class="fixed">
+                                <svg class="icon">
+                                    <use href="./assets/images/sprite.svg#icon-forward"></use>
+                                </svg>
+                            </div>
+                        </div> -->
                     </div>
                     <div class="card">
                         <div class="team-profile card-front">
@@ -178,15 +213,19 @@
                                 Co-founder/ IT Lead
                             </h3>
                             <p class="paragraph">Babcock University, Nigeria (Computer Science, B.S)</p>
-                            <div class="fixed">
-                                <svg class="icon">
-                                    <use href="./assets/images/sprite.svg#icon-forward"></use>
-                                </svg>
+
+                            <div class="center">
+                                <a href="https://www.linkedin.com/in/phuad-adebowale-71407b1b3/">
+                                    <svg class="icon team-icon">
+                                        <use href="./assets/images/sprite.svg#icon-linkedin-with-circle" />
+                                    </svg>
+                                </a>
                             </div>
+
                         </div>
 
-                        <div class="team-profile card-back">
-                            <div class="">
+                        <!-- <div class="team-profile card-back">
+                             <div class="">
                                 <p class="paragraph-small mb-2">
                                     Phuad Adebowale is an experienced Software Engineer. He works with development tools
                                     such as
@@ -200,7 +239,7 @@
                                     Nigeria. Phuad enjoys listening to behavioural and web development podcasts, playing
                                     basketball, football, lawn tennis and a good FIFA (video game) contender.
                                 </p>
-                            </div>
+                            </div> 
 
                             <div class="center">
                                 <a href="https://www.linkedin.com/in/phuad-adebowale-71407b1b3/">
@@ -215,43 +254,44 @@
                                 </svg>
                             </div>
                         </div>
+                             <div class="fixed">
+                                <svg class="icon">
+                                    <use href="./assets/images/sprite.svg#icon-forward"></use>
+                                </svg>
+                            </div>
+                    </div> -->
                     </div>
                 </div>
-            </div>
         </aside>
 
     </div>
     <footer class="footer">
         <div class="footer-container">
             <div class="video">
-                <div class="">
-                    <h3 class="heading-section text-white">Media</h3>
-                    <div class="flex">
-                        <div class=" mt-2 flex-column">
-                            <object type="video">
-                                <iframe width="100%" class="video-source"
-                                    src="https://www.youtube.com/embed/WO2yLOpJaK0" title="YouTube video player"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen>
-                                </iframe>
-                            </object>
-                            <h3 class="heading-section__light">Africa is the youngest Continent</h3>
-                            <p class="paragraph-small">Bill Gates</p>
-                        </div>
-
-                        <div class="mt-2  flex-column">
-                            <video controls="controls" poster="/assets/images/kunlePoster.png" preload="auto"
-                                class="video-source">
-                                <source class="video-source"
-                                    src="./assets/video/WhatsApp Video 2022-05-10 at 3.39.39 PM.mp4" type="video/mp4">
-                                Your browser does not support the HTML5 Video element.
-                            </video>
-                            <h3 class="heading-section__light">Africans In Diapsora</h3>
-                            <p class="paragraph-small">Kunle Solarin</p>
-                        </div>
+                <h3 class="heading-section">Media</h3>
+                <div class="flex">
+                    <div class=" mt-2 flex-column">
+                        <object type="video">
+                            <iframe width="100%" class="video-source" src="https://www.youtube.com/embed/WO2yLOpJaK0"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </object>
+                        <h3 class="heading-section__light">Africa is the youngest Continent</h3>
+                        <p class="paragraph-small">Bill Gates</p>
                     </div>
 
+                    <div class="mt-2  flex-column">
+                        <video controls="controls" poster="/assets/images/kunlePoster.png" preload="auto"
+                            class="video-source">
+                            <source class="video-source"
+                                src="./assets/video/WhatsApp Video 2022-05-10 at 3.39.39 PM.mp4" type="video/mp4">
+                            Your browser does not support the HTML5 Video element.
+                        </video>
+                        <h3 class="heading-section__light">Africans In Diapsora</h3>
+                        <p class="paragraph-small">Olakunle Soriyan</p>
+                    </div>
                 </div>
             </div>
 
@@ -261,14 +301,14 @@
 
 
                 <span class="">
-                    <span class="footer-flex flex">
+                    <span class="flex footer-flex ">
                         <svg class="icon icon-white">
                             <use href="./assets/images/sprite.svg#icon-mail"></use>
                         </svg>
-                        <span> contact us </span></br>
+                        <span> contact us </span>
+                        <a class=" footer-link" href="mailto:info@adebouge.com"> info@adebouge.com </a>
                     </span>
 
-                    <a class="link footer-link" href="mailto:info@adebouge.com"> info@adebouge.com </a>
                 </span>
             </div>
     </footer>

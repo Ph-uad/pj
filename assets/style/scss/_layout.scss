@@ -20,6 +20,7 @@
     width: 70%;
     margin: 5% auto;
     padding: 5rem;
+    scroll-snap-align: center;
 
     @media (max-width: 60rem) {
         &{
