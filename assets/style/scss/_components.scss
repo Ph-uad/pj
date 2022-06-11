@@ -1,7 +1,8 @@
 .header {
     height: fit-content;
     background: linear-gradient(60deg, #1d1d1d 0%, #0a056c 100%);
-    color:white;
+    //  background: linear-gradient(60deg, #c4c0c0 0%, #cecdcd 100%);
+    
 
     .inner-header {height:60vh; }
     &-container { text-align:center;}
@@ -14,11 +15,15 @@
 }
 
 
+
 .team {
     &-profile {
-        border-radius: 5px;
-        padding: 4rem 1rem;
+        border-radius: 5rem;
+        padding: 1rem 1rem;
+        background: #d5d6dc71;
+        backdrop-filter: blur(14px);
     }
+
 
     &-gallery {
         clip-path: circle(40% at 50%);
@@ -35,22 +40,87 @@
 
 
 
-.video {
+.media {
     width: 70%;
     margin: 0 auto;
     padding: 4rem 0;
 
 
+&-container{
+    position: relative;
+    height: 65vh;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+
+    @media (max-width: 70em) {
+        &{
+            height: 45vh;
+        }
+    }
+
+
+    &__video{
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding:5rem 25rem;
+        height: 100%;
+        width: 100%;
+
+        @media (max-width: 70em) {
+            &{
+                padding:5rem 2%;
+            }
+        }
+
+
+        transition:transform  .3s ease-in-out ;
+    }
+}
+
+&-icon{
+    width: 6rem;
+    height: 6rem;
+    padding: 2rem;
+    position: absolute;
+    border: thin solid #1d1d1d;
+    border-radius: 100px;
+    top: 45%;
+
+    @media (max-width: 70em) {
+        &{
+            top: 90%;
+            width: 4rem;
+            height: 4rem;
+            padding: 1rem;
+        }
+    }
+
+
+    &:nth-child(odd){
+        left: 0%;
+    }
+
+    &:nth-child(even){
+        right: 0%;
+    }
+}
+
+
     &-source {
-        width: 40rem;
+        width: 100%;
+        height: 100%;
         aspect-ratio: 3/2;
         object-fit: cover;
+        border-radius: 3rem;
 
-
-        @media (max-width: 60rem) {
-            & {
-                width: 30rem;
-            }
+        &__iframe{
+            width: 100%;
+            aspect-ratio: 3/2;
+            height: 100%;
+            object-fit: cover;
+        border-radius: 3rem;
         }
     }
 
@@ -69,10 +139,7 @@
 .footer {
     font-size: 2rem;
 
-    &-container {
-        background-color: #e7e7f0;
-        border-radius: 5rem 5rem 0 0;
-    }
+
 
 
     &-flex {

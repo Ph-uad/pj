@@ -132,98 +132,6 @@ body {
   transform: rotateY(0deg);
 }
 
-.header {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  background: linear-gradient(60deg, #1d1d1d 0%, #0a056c 100%);
-  color: white;
-}
-.header .inner-header {
-  height: 60vh;
-}
-.header-container {
-  text-align: center;
-}
-
-.mission-text {
-  flex: 0 1 60%;
-}
-.mission-gallery {
-  flex: 0 1 30%;
-}
-.mission-image {
-  width: 100%;
-}
-
-.team-profile {
-  border-radius: 5px;
-  padding: 4rem 1rem;
-}
-.team-gallery {
-  -webkit-clip-path: circle(40% at 50%);
-          clip-path: circle(40% at 50%);
-  overflow: hidden;
-  width: 80%;
-  margin: 0 auto;
-}
-.team-gallery__img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.video {
-  width: 70%;
-  margin: 0 auto;
-  padding: 4rem 0;
-}
-.video-source {
-  width: 40rem;
-  aspect-ratio: 3/2;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-@media (max-width: 60rem) {
-  .video-source {
-    width: 30rem;
-  }
-}
-.video-label {
-  width: 100%;
-  aspect-ratio: 4/1;
-  background-color: #FFf;
-}
-.video-label > span {
-  margin-right: auto;
-}
-
-.footer {
-  font-size: 2rem;
-}
-.footer-container {
-  background-color: #e7e7f0;
-  border-radius: 5rem 5rem 0 0;
-}
-.footer-flex {
-  flex-direction: row;
-}
-.footer-note {
-  width: 100%;
-  margin: 10rem auto 0 auto;
-  padding: 2rem;
-  border-top: 1px solid #1d1d1d;
-}
-@media (max-width: 60rem) {
-  .footer-note {
-    width: 100%;
-  }
-}
-.footer-link {
-  color: currentColor;
-  margin-left: 0.5rem;
-}
-
 .heading-jumbo {
   font-size: 6.4rem;
 }
@@ -296,6 +204,10 @@ body {
 
 .mt-2 {
   margin-top: 2rem;
+}
+
+.relative {
+  position: relative;
 }
 
 .button {
@@ -401,4 +313,147 @@ body {
     height: 5rem;
     min-height: 5rem;
   }
+}
+.header {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: linear-gradient(60deg, #1d1d1d 0%, #0a056c 100%);
+}
+.header .inner-header {
+  height: 60vh;
+}
+.header-container {
+  text-align: center;
+}
+
+.mission-text {
+  flex: 0 1 60%;
+}
+.mission-gallery {
+  flex: 0 1 30%;
+}
+.mission-image {
+  width: 100%;
+}
+
+.team-profile {
+  border-radius: 5rem;
+  padding: 1rem 1rem;
+  background: rgba(213, 214, 220, 0.4431372549);
+  -webkit-backdrop-filter: blur(14px);
+          backdrop-filter: blur(14px);
+}
+.team-gallery {
+  -webkit-clip-path: circle(40% at 50%);
+          clip-path: circle(40% at 50%);
+  overflow: hidden;
+  width: 80%;
+  margin: 0 auto;
+}
+.team-gallery__img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.media {
+  width: 70%;
+  margin: 0 auto;
+  padding: 4rem 0;
+}
+.media-container {
+  position: relative;
+  height: 65vh;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+@media (max-width: 70em) {
+  .media-container {
+    height: 45vh;
+  }
+}
+.media-container__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 5rem 25rem;
+  height: 100%;
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+@media (max-width: 70em) {
+  .media-container__video {
+    padding: 5rem 2%;
+  }
+}
+.media-icon {
+  width: 6rem;
+  height: 6rem;
+  padding: 2rem;
+  position: absolute;
+  border: thin solid #1d1d1d;
+  border-radius: 100px;
+  top: 45%;
+}
+@media (max-width: 70em) {
+  .media-icon {
+    top: 90%;
+    width: 4rem;
+    height: 4rem;
+    padding: 1rem;
+  }
+}
+.media-icon:nth-child(odd) {
+  left: 0%;
+}
+.media-icon:nth-child(even) {
+  right: 0%;
+}
+.media-source {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 3/2;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 3rem;
+}
+.media-source__iframe {
+  width: 100%;
+  aspect-ratio: 3/2;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 3rem;
+}
+.media-label {
+  width: 100%;
+  aspect-ratio: 4/1;
+  background-color: #FFf;
+}
+.media-label > span {
+  margin-right: auto;
+}
+
+.footer {
+  font-size: 2rem;
+}
+.footer-flex {
+  flex-direction: row;
+}
+.footer-note {
+  width: 100%;
+  margin: 10rem auto 0 auto;
+  padding: 2rem;
+  border-top: 1px solid #1d1d1d;
+}
+@media (max-width: 60rem) {
+  .footer-note {
+    width: 100%;
+  }
+}
+.footer-link {
+  color: currentColor;
+  margin-left: 0.5rem;
 }/*# sourceMappingURL=style.css.map */
