@@ -1,11 +1,11 @@
 .flex {
     display: flex;
     justify-content: space-between;
-    gap: auto;
+    flex-direction: column;
     align-items: center;
 
-    @media (max-width:60em) {
-        flex-direction: column;
+    @media (min-width:60em) {
+        flex-direction: row;
     }
 
     &-column {
@@ -17,67 +17,27 @@
 }
 
 .section {
-    width: 70%;
+    width: 80%;
+    padding: 10rem 1rem;
     margin: 5% auto;
-    padding: 5rem;
+ 
 
-    @media (max-width: 60rem) {
+    @media (min-width: 60rem) {
         &{
-            width: 80%;
-            padding: 10rem 1rem;
+            width: 70%;
+            padding: 5rem;
         }
     }
 }
 
 .card {
     position: relative;
-    height: 55rem;
-    width: 40rem;
-
-    @media (max-width:60em) {
-        &{
-    
-            margin-bottom: 3rem;
-        }
-    }
-
-    &-front,&-back{
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        backface-visibility: hidden;
-        perspective: 200px;
-        transition: all 1s ease-in-out;
-    }
+    width: 30rem;
+    height: 40%;
+    border-bottom: thin solid #1d1d1d;
 
     &-front {
         text-align: center;
         transform: rotateY(0);
-        background-color:#fff;
-    }
-
-    &-back{
-        left: 2%;
-        cursor:default;
-        transform: rotateY(-180deg);
-        background-color:#f6f6f6;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        overflow: scroll;
-
-        @media (max-width:60em) {
-            &{
-                left: 0%;
-            }
-        }
     }
 }
-
-.flip > .card-front{
-    transform: rotateY(180deg);
-}
-.flip > .card-back{
-    transform: rotateY(0deg);
-}
-
