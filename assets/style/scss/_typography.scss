@@ -1,6 +1,4 @@
-.center {
-  text-align: center;
-}
+
 h1,
 h2,
 h3,
@@ -18,8 +16,6 @@ body{
   &-nav {
     font-size: 2rem;
     text-transform: uppercase;
-    letter-spacing: -1px;
-
   }
 
   &--jumbo {
@@ -35,27 +31,28 @@ body{
 
   &-primary {
     font-size: 3rem;
-    &__light {
-      font-size: 2rem;
-      font-weight: 600;
-    }
   }
   &--secondary {
     font-size: 7rem;
     position: absolute;
-    top: -13%;
+    top: -5%;
     color: #AAABAB;
 
     @media (min-width: 90em) {
       & {
         font-size: 12rem;
-        top: -15%;
+        top: -8%;
       }
     }
   }
 
+  &--tertiary{
+    font-size: 2.8rem;
+  }
+
   &--section {
     font-size: 6rem;
+    position: relative;
 
     @media (min-width: 60rem) {
       & {
@@ -97,4 +94,7 @@ body{
 .link {
   color: #aaa;
   text-decoration: none;
+}
+.center {
+  text-align: center;
 }

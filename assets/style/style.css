@@ -80,26 +80,15 @@ body {
   align-items: center;
 }
 
-.section {
-  width: 80%;
-  padding: 10rem 1rem;
-  margin: 15rem auto;
-}
-@media (min-width: 60rem) {
-  .section {
-    width: 70%;
-  }
-}
-.section__container {
-  position: relative;
-}
-
 .card {
   position: relative;
-  width: 80%;
   margin: 3% auto;
   overflow: hidden;
   align-items: center;
+  padding: 4rem;
+  background: rgba(24, 28, 29, 0.3411764706);
+  -webkit-backdrop-filter: saturate(180px) blur(8);
+          backdrop-filter: saturate(180px) blur(8);
 }
 @media (min-width: 40em) {
   .card {
@@ -107,8 +96,8 @@ body {
   }
 }
 .card__figure {
-  aspect-ratio: 1/1.4;
   flex: 0 1 40%;
+  overflow: hidden;
 }
 .card:nth-child(2) .card__figure {
   order: 4;
@@ -124,23 +113,12 @@ body {
   width: 100%;
   transition: all 0.4s ease-in-out;
 }
-.card__detailsText {
-  padding: 1rem;
-}
 .card__button {
   width: 100%;
   background: rgba(4, 235, 19, 0.937254902);
 }
 .card:hover .card__details {
   bottom: 0%;
-}
-
-.container {
-  transition: 0.2s ease-in-out all;
-}
-
-.center {
-  text-align: center;
 }
 
 h1,
@@ -159,7 +137,6 @@ body {
 .heading-nav {
   font-size: 2rem;
   text-transform: uppercase;
-  letter-spacing: -1px;
 }
 .heading--jumbo {
   font-size: 6rem;
@@ -173,24 +150,24 @@ body {
 .heading-primary {
   font-size: 3rem;
 }
-.heading-primary__light {
-  font-size: 2rem;
-  font-weight: 600;
-}
 .heading--secondary {
   font-size: 7rem;
   position: absolute;
-  top: -13%;
+  top: -5%;
   color: #AAABAB;
 }
 @media (min-width: 90em) {
   .heading--secondary {
     font-size: 12rem;
-    top: -15%;
+    top: -8%;
   }
+}
+.heading--tertiary {
+  font-size: 2.8rem;
 }
 .heading--section {
   font-size: 6rem;
+  position: relative;
 }
 @media (min-width: 60rem) {
   .heading--section {
@@ -220,6 +197,10 @@ body {
 .link {
   color: #aaa;
   text-decoration: none;
+}
+
+.center {
+  text-align: center;
 }
 
 .mb-2 {
@@ -280,15 +261,13 @@ body {
   padding: 1rem 2rem;
   -webkit-backdrop-filter: saturate(180%) blur(20px);
           backdrop-filter: saturate(180%) blur(20px);
-  background: rgba(255, 255, 255, 0.2705882353);
-  color: #1d1d1d;
   z-index: 100;
   opacity: 0;
 }
 
 .header {
   position: relative;
-  height: 80vh;
+  height: 100vh;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.6666666667), rgba(0, 0, 0, 0.8235294118)), url(../media/images/hero.jpg);
   background-position: center center;
   background-size: cover;
@@ -321,12 +300,38 @@ body {
   height: 5rem;
 }
 
+.section {
+  position: relative;
+  width: 80%;
+  padding: 1rem;
+  margin: 15rem auto;
+}
+@media (min-width: 60rem) {
+  .section {
+    width: 70%;
+  }
+}
+.section__container {
+  position: relative;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+@media (min-width: 50em) {
+  .container {
+    width: 80;
+  }
+}
+
 .ad__block {
   margin: 10rem 0;
 }
-.ad__block:nth-child(2) .ad__poster {
-  order: 3;
-  width: 0;
+@media (min-width: 40em) {
+  .ad__block:nth-child(2) .ad__poster {
+    order: 3;
+  }
 }
 .ad__poster {
   flex: 0 1 50%;
