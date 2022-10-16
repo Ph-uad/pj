@@ -3,16 +3,15 @@
 .relative{position: relative;}
 
 .button {
-    padding: 1.5rem 1.7rem;
+    padding: 1rem;
     border: transparent;
     font-size: 2rem;
+    text-align: center;
     font-weight: 700;
-    letter-spacing: -0.02em;
-    border-radius: 5px;
-    transition: all .6s ease-in-out;
+    transition: all .5s ease-in-out;
     backdrop-filter: saturate(180%) blur(20px);
-    background: #ffffff1a;
-    color: #fff;
+    background: #2E3132;
+    color: inherit;
   
 
     @media (max-width: 60rem) {

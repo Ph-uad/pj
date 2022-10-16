@@ -4,10 +4,15 @@
     box-sizing: inherit;
 }
 
+:root{
+  --Bg--color: #191C1D;
+  --Text--color: #FFFFFF;
+}
+
 html{
     font-family: 'Work Sans', sans-serif;
 
-    line-height: 1.7;
+    line-height: 1.4;
     font-size: 62.5%;
     scroll-behavior: smooth;
 
@@ -56,6 +61,9 @@ html{
 
 body{
     box-sizing: border-box; 
+    background: var(--Bg--color);
+
+    overflow-y: scroll ;
 }
 
 ::-webkit-scrollbar {

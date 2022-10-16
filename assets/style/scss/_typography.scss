@@ -1,87 +1,100 @@
-.center{ text-align: center;}
-h1,h2,h3,h4,h5,h6{ font-family: 'Merriweather', serif;}
+.center {
+  text-align: center;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family:  "Helvetica Neue", Helvetica, sans-serif;;
+}
+
+body{
+  color: var(--Text--color);
+}
 
 .heading {
+  &-nav {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: -1px;
 
+  }
 
-    &-nav{
-        font-size: 2rem;
-        text-transform: uppercase;
-        letter-spacing: -1px;
+  &--jumbo {
+    font-size: 6rem;
+    font-weight: 300;
+
+    @media (max-width: 60rem) {
+      & {
+        font-size: 3.5rem;
+      }
     }
+  }
 
-    &-jumbo {
-        font-size: 8rem;
-        height: fit-content;
-        text-transform: capitalize;
-
-        @media (max-width: 60rem) {
-            &{
-                font-size: 3.5rem;
-            }
-        }
+  &-primary {
+    font-size: 3rem;
+    &__light {
+      font-size: 2rem;
+      font-weight: 600;
     }
+  }
+  &--secondary {
+    font-size: 7rem;
+    position: absolute;
+    top: -13%;
+    color: #AAABAB;
 
-    &-primary {
-        font-size: 3rem;
-        &__light{
-            font-size: 2rem;
-            font-weight: 600;
-        }
+    @media (min-width: 90em) {
+      & {
+        font-size: 12rem;
+        top: -15%;
+      }
     }
+  }
 
-    &-section {
-        font-size: 2.6rem;
+  &--section {
+    font-size: 6rem;
 
-
-        @media (max-width: 60rem) {
-            &{
-                font-size: 2.4rem;
-            }
-        }
-
-        &__light{
-            font-size: 2rem;
-            font-weight: 300;
-
-        }
-
+    @media (min-width: 60rem) {
+      & {
+        font-size: 12rem;
+      }
     }
+  }
 }
 
 .paragraph {
-    font-size: 2rem;
-    font-weight: 200;
+  font-size: 2rem;
+  font-weight: 200;
 
-    @media (max-width: 60rem) {
-        &{
-            font-size: 1.8rem;
-            font-weight: 400;
-        }
+  @media (max-width: 60rem) {
+    & {
+      font-size: 1.8rem;
+      font-weight: 400;
     }
+  }
 
-    &-small{
-        font-size: 1.4rem;
-        font-weight: 300;
-    }
+  &-small {
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
 }
 
-.list-item {
-    font-size: 1.6rem;
-    font-weight: 500;
+// .list-item {
+//   font-size: 1.6rem;
+//   font-weight: 500;
+// }
+
+.text--white {
+  color: #fdfdff;
 }
+// .icon-white {
+//   fill: #b3b8cb;
+// }
 
-
-
-.text-white{
-    color: #FDFDFF;
-}
-.icon-white{
-    fill: #b3b8cb;
-}
-
-.link{
-    color: #1d1d1d;
-    color: currentColor;
-    text-decoration: none;
+.link {
+  color: #aaa;
+  text-decoration: none;
 }
