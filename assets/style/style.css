@@ -82,18 +82,9 @@ body {
 
 .card {
   position: relative;
-  margin: 3% auto;
   overflow: hidden;
   align-items: center;
   padding: 4rem;
-  background: rgba(24, 28, 29, 0.3411764706);
-  -webkit-backdrop-filter: saturate(180px) blur(8);
-          backdrop-filter: saturate(180px) blur(8);
-}
-@media (min-width: 40em) {
-  .card {
-    flex: 0 1 35%;
-  }
 }
 .card__figure {
   flex: 0 1 40%;
@@ -121,6 +112,30 @@ body {
   bottom: 0%;
 }
 
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+@media (min-width: 50em) {
+  .container {
+    width: 80;
+  }
+}
+
+.section {
+  position: relative;
+  width: 80%;
+  margin: 15rem auto;
+}
+@media (min-width: 60rem) {
+  .section {
+    width: 70%;
+  }
+}
+.section__container {
+  position: relative;
+}
+
 h1,
 h2,
 h3,
@@ -140,7 +155,7 @@ body {
 }
 .heading--jumbo {
   font-size: 6rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 @media (max-width: 60rem) {
   .heading--jumbo {
@@ -203,6 +218,10 @@ body {
   text-align: center;
 }
 
+.capitalize {
+  text-transform: capitalize;
+}
+
 .mb-2 {
   margin-bottom: 2rem;
 }
@@ -213,6 +232,10 @@ body {
 
 .relative {
   position: relative;
+}
+
+.pd-2 {
+  padding: 2rem;
 }
 
 .button {
@@ -258,7 +281,6 @@ body {
   position: fixed;
   top: 0;
   width: 100vw;
-  padding: 1rem 2rem;
   -webkit-backdrop-filter: saturate(180%) blur(20px);
           backdrop-filter: saturate(180%) blur(20px);
   z-index: 100;
@@ -272,7 +294,6 @@ body {
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
-  padding: 14rem 0;
 }
 @media (min-width: 60em) {
   .header {
@@ -298,31 +319,6 @@ body {
 .header svg {
   width: 5rem;
   height: 5rem;
-}
-
-.section {
-  position: relative;
-  width: 80%;
-  padding: 1rem;
-  margin: 15rem auto;
-}
-@media (min-width: 60rem) {
-  .section {
-    width: 70%;
-  }
-}
-.section__container {
-  position: relative;
-}
-
-.container {
-  width: 90%;
-  margin: 0 auto;
-}
-@media (min-width: 50em) {
-  .container {
-    width: 80;
-  }
 }
 
 .ad__block {
@@ -360,7 +356,7 @@ body {
 }
 .media__video {
   width: 100vw;
-  transform: scale(0.5);
+  transform: scale(0.7);
 }
 
 .footer {

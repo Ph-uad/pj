@@ -2,7 +2,6 @@
   position: fixed;
   top: 0;
   width: 100vw;
-  padding: 1rem 2rem;
   backdrop-filter: saturate(180%) blur(20px);
   z-index: 100;
   opacity: 0;
@@ -11,12 +10,10 @@
 .header {
   position: relative;
   height: 100vh;
-  background: linear-gradient(0deg, #000000aa, #000000d2),
-    url(../media/images/hero.jpg);
+  background: linear-gradient(0deg, #000000aa, #000000d2), url(../media/images/hero.jpg);
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
-  padding: 14rem 0;
 
   @media (min-width: 60em) {
     height: 100vh;
@@ -45,32 +42,6 @@
   }
 }
 
-.section {
-  position: relative;
-  width: 80%;
-  padding: 1rem;
-  margin: 15rem auto;
-
-  @media (min-width: 60rem) {
-    & {
-      width: 70%;
-    }
-  }
-  &__container {
-    position: relative;
-  }
-}
-
-.container {
-  width: 90%;
-  margin: 0 auto;
-
-  @media (min-width: 50em) {
-    & {
-      width: 80;
-    }
-  }
-}
 
 .ad {
   &__block {
@@ -111,7 +82,7 @@
   justify-content: center;
   &__video {
     width: 100vw;
-    transform: scale(0.5);
+    transform: scale(0.7);
   }
 }
 

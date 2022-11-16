@@ -20,7 +20,7 @@ body{
 
   &--jumbo {
     font-size: 6rem;
-    font-weight: 300;
+    font-weight: 400;
 
     @media (max-width: 60rem) {
       & {
@@ -98,3 +98,5 @@ body{
 .center {
   text-align: center;
 }
+
+.capitalize{ text-transform: capitalize;}

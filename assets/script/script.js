@@ -25,38 +25,36 @@ gsap.to(".paragraph", {
     y: 70,
 })
 
-gsap.to(".media__video", {
-    scrollTrigger: {
-        trigger: ".media",
-        start: "top center",
-        scrub: 4,
-        end: "bottom -=200",
-        onEnter: () => {video[0].play() },
-        onLeave: () => { video[0].pause() },
-
-    },
-    width: "100vw",
-})
-
 const videos = document.querySelectorAll('.media__video')
 const intros = document.querySelectorAll('.heading--section')
+const sections = document.querySelectorAll('.section')
 
 videos.forEach(e => {
     gsap.to(e, {
         scrollTrigger: {
             trigger: e,
-            start: "center +=700",
-            toggleActions: "play pause resume reset",
+            start: "center center",
             scrub: 4,
-            end: "bottom +=400",
+            end: "bottom center",
             onEnter: () => { e.play(); },
             onLeave: () => { e.pause(); },
         },
-        transform: "scale(1)"
+        transform: "scale(1)",
     })
 });
 
-
+sections.forEach(e => {
+    gsap.from(e, {
+        scrollTrigger: {
+            trigger: e,
+            start: "top center",
+            toggleActions: "play pause resume reset",
+            end: "bottom center",
+        },
+        y: -100,
+        opacity: 0
+    })
+});
 
 intros.forEach(e => {
     gsap.from(e, {
@@ -73,16 +71,9 @@ intros.forEach(e => {
     })
 });
 
-
-
 // Wrap every letter in a span
 var textWrapper = document.querySelectorAll('.ml3');
-
-textWrapper.forEach(text => {
-    text.innerHTML = text.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-});
-
-
+textWrapper.forEach(text => {text.innerHTML = text.textContent.replace(/\S/g, "<span class='letter'>$&</span>");});
 anime.timeline({loop: false})
   .add({
     targets: '.ml3 .letter',
