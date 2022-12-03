@@ -83,16 +83,12 @@ anime.timeline({loop: false})
     delay: (el, i) => 50 * (i+1)
   })
 
-
 // const slide = ( ) =>{
 //     videos.forEach((block, index) => {
 //         block.style.transform = `translateX(${100 * (index - currentSlide)}%)`; 
 //     });
 // }
-
 // slide()
-
-
 // buttonPrevious.addEventListener('click',()=>{
 //    currentSlide === 0 ? currentSlide  = videos.length -1 : currentSlide--;
 //    slide();
