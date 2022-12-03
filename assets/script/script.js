@@ -35,7 +35,7 @@ videos.forEach(e => {
             trigger: e,
             start: "center center",
             scrub: 4,
-            end: "bottom center",
+            end: "bottom 20%",
             onEnter: () => { e.play(); },
             onLeave: () => { e.pause(); },
         },
