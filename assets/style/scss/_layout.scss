@@ -23,12 +23,9 @@
   overflow: hidden;
   align-items: center;
   padding: 4rem;
-  // background: #181c1d57;
-  // backdrop-filter: saturate(180px) blur(8);
-
 
   &__figure {
-    flex: 0 1 40%;
+    flex: 0 1 65%;
     overflow: hidden;
   }
 
@@ -77,10 +74,22 @@
 
   @media (min-width: 60rem) {
     & {
-      width: 70%;
+      width: 65%;
     }
   }
   &__container {
     position: relative;
+  }
+}
+
+.absolute--header {
+  position: absolute;
+  top: -10%;
+
+  @media (min-width: 90em) {
+    & {
+      font-size: 12rem;
+      top: -3%;
+    }
   }
 }
