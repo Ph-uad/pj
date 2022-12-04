@@ -1,11 +1,3 @@
-.nav {
-  position: fixed;
-  top: 0;
-  width: 100vw;
-  backdrop-filter: saturate(180%) blur(20px);
-  z-index: 100;
-  opacity: 0;
-}
 
 .header {
   position: relative;
@@ -14,10 +6,6 @@
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
-
-  @media (min-width: 60em) {
-    height: 100vh;
-  }
 
   &__container {
     position: absolute;
@@ -41,22 +29,28 @@
     height: 5rem;
   }
 }
-
-
 .ad {
   &__block {
+    border-radius: 10px;
+    overflow: hidden;
     margin: 10rem 0;
+
     &:nth-child(2) .ad__poster {
       @media (min-width: 40em) {
         order: 3;
       }
     }
   }
-
+  &__text{
+    flex: 0 1 40%;
+  }
   &__poster {
-    flex: 0 1 50%;
+    flex: 0 1 35%;
+    aspect-ratio: 1;
+    overflow: hidden;
   }
 }
+
 
 .team {
   &-profile {
@@ -82,13 +76,13 @@
   justify-content: center;
   &__video {
     width: 100vw;
+    border-radius: 10px;
+    box-shadow: 0 12px 12px 24px #0f0f0f;
     transform: scale(0.7);
   }
 }
 
 .footer {
-  font-size: 1.4rem;
-  font-weight: 400;
   padding: 10rem 4rem;
 
   &__container {
@@ -96,11 +90,6 @@
     margin: 0 auto;
     width: 80vw;
     border-top: 0.2px dashed var(--Text--color);
-  }
-
-  &-flex {
-    flex-direction: row;
-    justify-content: left;
   }
 }
 

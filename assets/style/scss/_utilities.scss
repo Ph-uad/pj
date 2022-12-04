@@ -2,6 +2,12 @@
 .mt-2{margin-top: 2rem;}
 .relative{position: relative;}
 .pd-2{padding: 2rem;}
+.width--max{width: 80%}
+
+.width--max {
+    width: 80%;
+    @media (min-width: 64rem) { & { width: 55%;}}
+}
 
 .button {
     padding: 1rem;

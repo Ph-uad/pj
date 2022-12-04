@@ -5,8 +5,8 @@
 }
 
 :root {
-  --Bg--color: #191C1D;
-  --Text--color: #FFFFFF;
+  --Bg--color: #191919;
+  --Text--color: #e5e5e5;
 }
 
 html {
@@ -87,7 +87,7 @@ body {
   padding: 4rem;
 }
 .card__figure {
-  flex: 0 1 40%;
+  flex: 0 1 65%;
   overflow: hidden;
 }
 .card:nth-child(2) .card__figure {
@@ -129,11 +129,22 @@ body {
 }
 @media (min-width: 60rem) {
   .section {
-    width: 70%;
+    width: 65%;
   }
 }
 .section__container {
   position: relative;
+}
+
+.absolute--header {
+  position: absolute;
+  top: -10%;
+}
+@media (min-width: 90em) {
+  .absolute--header {
+    font-size: 12rem;
+    top: -3%;
+  }
 }
 
 h1,
@@ -166,15 +177,12 @@ body {
   font-size: 3rem;
 }
 .heading--secondary {
-  font-size: 7rem;
-  position: absolute;
-  top: -5%;
-  color: #AAABAB;
+  font-size: 8rem;
+  color: #474747;
 }
-@media (min-width: 90em) {
+@media (min-width: 64em) {
   .heading--secondary {
     font-size: 12rem;
-    top: -8%;
   }
 }
 .heading--tertiary {
@@ -190,17 +198,17 @@ body {
   }
 }
 
-.paragraph {
+.paragraph, .text {
   font-size: 2rem;
   font-weight: 200;
 }
 @media (max-width: 60rem) {
-  .paragraph {
+  .paragraph, .text {
     font-size: 1.8rem;
     font-weight: 400;
   }
 }
-.paragraph-small {
+.paragraph-small, .text-small {
   font-size: 1.4rem;
   font-weight: 300;
 }
@@ -236,6 +244,19 @@ body {
 
 .pd-2 {
   padding: 2rem;
+}
+
+.width--max {
+  width: 80%;
+}
+
+.width--max {
+  width: 80%;
+}
+@media (min-width: 64rem) {
+  .width--max {
+    width: 55%;
+  }
 }
 
 .button {
@@ -277,16 +298,6 @@ body {
   margin-left: 1rem;
 }
 
-.nav {
-  position: fixed;
-  top: 0;
-  width: 100vw;
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
-          backdrop-filter: saturate(180%) blur(20px);
-  z-index: 100;
-  opacity: 0;
-}
-
 .header {
   position: relative;
   height: 100vh;
@@ -294,11 +305,6 @@ body {
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
-}
-@media (min-width: 60em) {
-  .header {
-    height: 100vh;
-  }
 }
 .header__container {
   position: absolute;
@@ -322,6 +328,8 @@ body {
 }
 
 .ad__block {
+  border-radius: 10px;
+  overflow: hidden;
   margin: 10rem 0;
 }
 @media (min-width: 40em) {
@@ -329,8 +337,13 @@ body {
     order: 3;
   }
 }
+.ad__text {
+  flex: 0 1 40%;
+}
 .ad__poster {
-  flex: 0 1 50%;
+  flex: 0 1 35%;
+  aspect-ratio: 1;
+  overflow: hidden;
 }
 
 .team-profile {
@@ -356,12 +369,12 @@ body {
 }
 .media__video {
   width: 100vw;
+  border-radius: 10px;
+  box-shadow: 0 12px 12px 24px #0f0f0f;
   transform: scale(0.7);
 }
 
 .footer {
-  font-size: 1.4rem;
-  font-weight: 400;
   padding: 10rem 4rem;
 }
 .footer__container {
@@ -369,10 +382,6 @@ body {
   margin: 0 auto;
   width: 80vw;
   border-top: 0.2px dashed var(--Text--color);
-}
-.footer-flex {
-  flex-direction: row;
-  justify-content: left;
 }
 
 @-webkit-keyframes upDown {

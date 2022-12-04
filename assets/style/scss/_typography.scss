@@ -32,16 +32,14 @@ body{
   &-primary {
     font-size: 3rem;
   }
-  &--secondary {
-    font-size: 7rem;
-    position: absolute;
-    top: -5%;
-    color: #AAABAB;
 
-    @media (min-width: 90em) {
-      & {
+  &--secondary {
+    font-size: 8rem;
+    color: #474747;
+
+    @media (min-width:64em) {
+      &{
         font-size: 12rem;
-        top: -8%;
       }
     }
   }
@@ -62,7 +60,7 @@ body{
   }
 }
 
-.paragraph {
+.paragraph, .text {
   font-size: 2rem;
   font-weight: 200;
 
