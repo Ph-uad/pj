@@ -3,7 +3,7 @@ const video = document.querySelectorAll('.media__video');
 
 gsap.registerPlugin(ScrollTrigger)
 
-gsap.from(".paragraph", {
+gsap.from(".paragraph--animated", {
     scrollTrigger: {
         trigger: ".ad__block",
         start: "top 70%",
